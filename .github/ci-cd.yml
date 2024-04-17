@@ -29,5 +29,5 @@ jobs:
         gcloud auth activate-service-account --key-file=key.json
         gcloud config set project <project-id>
         gcloud container clusters get-credentials mycluster24 --zone us-central1
-        kubectl apply -f deployment.yaml
+        kubectl apply -f deployment.yaml -f service.yaml
 
